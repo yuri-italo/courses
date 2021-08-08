@@ -14,22 +14,22 @@ conforme exemplo.
 
 ## EXAMPLE
 
-How many rooms will be rented? 3<br>
+How many rooms will be rented? **3**<br>
 
-Rent #1:<br>
-Name: Maria Green<br>
+**Rent #1:**<br>
+Name: **Maria Green**<br>
 Email: maria@gmail.com<br>
-Room: 5<br>
+Room: **5**<br>
 
-Rent #2:<br>
-Name: Marco Antonio<br>
+**Rent #2:**<br>
+Name: **Marco Antonio**<br>
 Email: marco@gmail.com<br>
-Room: 1<br>
+Room: **1**<br>
 
-Rent #3:<br>
-Name: Alex Brown<br>
+**Rent #3:**<br>
+Name: **Alex Brown**<br>
 Email: alex@gmail.com<br>
-Room: 8<br>
+Room: **8**<br>
 
 Busy rooms:<br>
 1: Marco Antonio, marco@gmail.com<br>

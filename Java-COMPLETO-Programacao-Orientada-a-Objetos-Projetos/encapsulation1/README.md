@@ -20,35 +20,35 @@ mostrando os dados da conta após cada operação.
 
 ## EXAMPLE 1
 
-Enter account number: 8532<br>
-Enter account holder: Alex Green<br>
-Is there na initial deposit (y/n)? y<br>
-Enter initial deposit value: 500.00<br>
+Enter account number: **8532**<br>
+Enter account holder: **Alex Green**<br>
+Is there na initial deposit (y/n)? **y**<br>
+Enter initial deposit value: **500.00**<br>
 
 Account data:<br>
 Account 8532, Holder: Alex Green, Balance: $ 500.00<br>
 
-Enter a deposit value: 200.00<br>
+Enter a deposit value: **200.00**<br>
 Updated account data:<br>
 Account 8532, Holder: Alex Green, Balance: $ 700.00<br>
 
-Enter a withdraw value: 300.00<br>
+Enter a withdraw value: **300.00**<br>
 Updated account data:<br>
 Account 8532, Holder: Alex Green, Balance: $ 395.00<br>
 
 ## EXAMPLE 2
 
-Enter account number: 7801<br>
-Enter account holder: Maria Brown<br>
-Is there na initial deposit (y/n)? n<br>
+Enter account number: **7801**<br>
+Enter account holder: **Maria Brown**<br>
+Is there na initial deposit (y/n)? **n**<br>
 
 Account data:<br>
 Account 7801, Holder: Maria Brown, Balance: $ 0.00<br>
 
-Enter a deposit value: 200.00<br>
+Enter a deposit value: **200.00**<br>
 Updated account data:<br>
 Account 7801, Holder: Maria Brown, Balance: $ 200.00<br>
 
-Enter a withdraw value: 198.00<br>
+Enter a withdraw value: **198.00**<br>
 Updated account data:<br>
 Account 7801, Holder: Maria Brown, Balance: $ -3.00<br>

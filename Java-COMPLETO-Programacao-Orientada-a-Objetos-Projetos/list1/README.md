@@ -14,25 +14,25 @@ aumento por porcentagem dada.
 
 ## EXAMPLE 1
 
-How many employees will be registered? 3<br>
+How many employees will be registered? **3**<br>
 
-Emplyoee #1:<br>
-Id: 333<br>
-Name: Maria Brown<br>
-Salary: 4000.00<br>
+**Emplyoee #1:**<br>
+Id: **333**<br>
+Name: **Maria Brown**<br>
+Salary: **4000.00**<br>
 
-Emplyoee #2:<br>
-Id: 536<br>
-Name: Alex Grey<br>
-Salary: 3000.00<br>
+**Emplyoee #2:**<br>
+Id: **536**<br>
+Name: **Alex Grey**<br>
+Salary: **3000.00**<br>
 
-Emplyoee #3:<br>
-Id: 772<br>
-Name: Bob Green<br>
-Salary: 5000.00<br>
+**Emplyoee #3:**<br>
+Id: **772**<br>
+Name: **Bob Green**<br>
+Salary: **5000.00**<br>
 
-Enter the employee id that will have salary increase : 536<br>
-Enter the percentage: 10.0<br>
+Enter the employee id that will have salary increase : **536**<br>
+Enter the percentage: **10.0**<br>
 
 List of employees:<br>
 333, Maria Brown, 4000.00<br>
@@ -41,19 +41,19 @@ List of employees:<br>
 
 ## EXAMPLE 2 
 
-How many employees will be registered? 2<br>
+How many employees will be registered? **2**<br>
 
-Emplyoee #1:<br>
-Id: 333<br>
-Name: Maria Brown<br>
-Salary: 4000.00<br>
+**Emplyoee #1:**<br>
+Id: **333**<br>
+Name: **Maria Brown**<br>
+Salary: **4000.00**<br>
 
-Emplyoee #2:<br>
-Id: 536<br>
-Name: Alex Grey<br>
-Salary: 3000.00<br>
+**Emplyoee #2:**<br>
+Id: **536**<br>
+Name: **Alex Grey**<br>
+Salary: **3000.00**<br>
 
-Enter the employee id that will have salary increase: 776<br>
+Enter the employee id that will have salary increase: **776**<br>
 This id does not exist!<br>
 
 List of employees:<br>

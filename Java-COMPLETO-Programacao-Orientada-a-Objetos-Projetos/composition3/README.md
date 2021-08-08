@@ -6,21 +6,21 @@ o instante do sistema: new Date()
 
 ## EXAMPLE
 
-Enter cliente data:<br>
-Name: Alex Green<br>
+**Enter cliente data:**<br>
+Name: **Alex Green**<br>
 Email: alex@gmail.com<br>
-Birth date (DD/MM/YYYY): 15/03/1985<br>
-Enter order data:<br>
-Status: PROCESSING<br>
-How many items to this order? 2<br>
-Enter #1 item data:<br>
-Product name: TV<br>
-Product price: 1000.00<br>
-Quantity: 1<br>
-Enter #2 item data:<br>
-Product name: Mouse<br>
-Product price: 40.00<br>
-Quantity: 2<br>
+Birth date (DD/MM/YYYY): **15/03/1985**<br>
+**Enter order data:**<br>
+Status: **PROCESSING**<br>
+How many items to this order? **2**<br>
+**Enter #1 item data:**<br>
+Product name: **TV**<br>
+Product price: **1000.00**<br>
+Quantity: **1**<br>
+**Enter #2 item data:**<br>
+Product name: **Mouse**<br>
+Product price: **40.00**<br>
+Quantity: **2**<br>
 
 ORDER SUMMARY:<br>
 Order moment: 20/04/2018 11:25:09<br>
