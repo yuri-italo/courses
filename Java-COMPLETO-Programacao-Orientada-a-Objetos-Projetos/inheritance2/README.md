@@ -23,26 +23,26 @@ Exemplo: uma  empresa  cuja  renda foi 400000.00 e possui 25 funcionários, o im
 
 ## EXAMPLE
 
-Enter the number of tax payers: **3**
-**Tax payer #1 data:**
-Individual or company (i/c)? **i**
-Name: **Alex**
-Anual income: **50000.00**
-Health expenditures: **2000.00**
-**Tax payer #2 data:**
-Individual or company (i/c)? **c**
-Name: **SoftTech**
-Anual income: **400000.00**
-Number of employees: **25**
-**Tax payer #3 data:**
-Individual or company (i/c)? **i**
-Name: **Bob**
-Anual income: **120000.00**
-Health expenditures: **1000.00**
+Enter the number of tax payers: **3**<br>
+**Tax payer #1 data:**<br>
+Individual or company (i/c)? **i**<br>
+Name: **Alex**<br>
+Anual income: **50000.00**<br>
+Health expenditures: **2000.00**<br>
+**Tax payer #2 data:**<br>
+Individual or company (i/c)? **c**<br>
+Name: **SoftTech**<br>
+Anual income: **400000.00**<br>
+Number of employees: **25**<br>
+**Tax payer #3 data:**<br>
+Individual or company (i/c)? **i**<br>
+Name: **Bob**<br>
+Anual income: **120000.00**<br>
+Health expenditures: **1000.00**<br>
 
-TAXES PAID:
-Alex: $ 11500.00
-SoftTech: $ 56000.00
-Bob: $ 29500.00
+TAXES PAID:<br>
+Alex: $ 11500.00<br>
+SoftTech: $ 56000.00<br>
+Bob: $ 29500.00<br>
 
-TOTAL TAXES: $ 97000.00
+TOTAL TAXES: $ 97000.00<br>
