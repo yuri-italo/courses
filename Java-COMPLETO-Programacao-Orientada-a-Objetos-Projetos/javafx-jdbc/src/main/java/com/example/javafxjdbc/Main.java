@@ -9,6 +9,8 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class Main extends Application {
+    private static Scene mainScene;
+
     @Override
     public void start(Stage stage) throws IOException {
         try {
@@ -18,7 +20,7 @@ public class Main extends Application {
             scrollPane.setFitToHeight(true);
             scrollPane.setFitToWidth(true);
 
-            Scene mainScene = new Scene(scrollPane);
+            mainScene = new Scene(scrollPane);
             stage.setScene(mainScene);
             stage.setTitle("Sample JavaFX application");
             stage.show();
@@ -26,6 +28,10 @@ public class Main extends Application {
             e.printStackTrace();
         }
 
+    }
+
+    public static Scene getMainScene() {
+        return mainScene;
     }
 
     public static void main(String[] args) {
