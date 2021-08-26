@@ -9,6 +9,15 @@
 .idea/**/dictionaries
 .idea/**/shelf
 
+# build folders 
+bin/ 
+target/ 
+nbproject/private/ 
+build/ 
+nbbuild/ 
+dist/ 
+nbdist/ 
+
 # AWS User-specific
 .idea/**/aws.xml
 
