@@ -1,14 +1,39 @@
 package com.example.javafxjdbc;
 
 import javafx.fxml.FXML;
-import javafx.scene.control.Label;
+import javafx.fxml.Initializable;
+import javafx.scene.control.MenuItem;
 
-public class MainViewController {
+import java.net.URL;
+import java.util.ResourceBundle;
+
+public class MainViewController implements Initializable {
     @FXML
-    private Label welcomeText;
+    private MenuItem menuItemSeller;
 
     @FXML
-    protected void onHelloButtonClick() {
-        welcomeText.setText("Welcome to JavaFX Application!");
+    private MenuItem menuItemDepartment;
+
+    @FXML
+    private MenuItem menuItemAbout;
+
+    @FXML
+    public void onMenuItemSellerAction() {
+        System.out.println("onMenuItemSellerAction");
+    }
+
+    @FXML
+    public void onMenuItemDepartmentAction() {
+        System.out.println("onMenuItemDepartmentAction");
+    }
+
+    @FXML
+    public void onMenuItemAboutAction() {
+        System.out.println("onMenuItemAboutAction");
+    }
+
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+
     }
 }
