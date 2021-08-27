@@ -19,7 +19,7 @@ public class DepartmentListController implements Initializable {
     private DepartmentService service;
 
     @FXML
-    private TableView<Department> tableViewDepartment;
+    private TableView<model.entities.Department> tableViewDepartment;
 
     @FXML
     private TableColumn<Department,Integer> tableColumnID;
@@ -30,7 +30,7 @@ public class DepartmentListController implements Initializable {
     @FXML
     private Button btNew;
 
-    private ObservableList<Department> obsList;
+    private ObservableList<model.entities.Department> obsList;
 
     @FXML
     public void onBtNewAction() {
@@ -58,7 +58,7 @@ public class DepartmentListController implements Initializable {
         if (service == null) {
             throw new IllegalStateException("Service was null");
         }
-        List<Department> list = service.findAll();
+        List<model.entities.Department> list = service.findAll();
         obsList = FXCollections.observableArrayList(list);
         tableViewDepartment.setItems(obsList);
     }
