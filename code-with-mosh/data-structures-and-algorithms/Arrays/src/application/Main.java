@@ -11,11 +11,7 @@ public class Main {
         numbers.insert(30);
         numbers.insert(40);
         numbers.insert(50);
-        var numbers2 = new Array(3);
-        numbers2.insert(10);
-        numbers2.insert(30);
-        numbers2.insert(70);
-        var numbers3 = (numbers.intersect(numbers2));
-        numbers3.print();
+        numbers.reverse();
+        numbers.print();
     }
 }

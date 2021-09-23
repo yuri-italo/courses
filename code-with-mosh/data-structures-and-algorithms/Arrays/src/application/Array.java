@@ -73,4 +73,13 @@ public class Array {
 
         return intersection;
     }
+
+    public void reverse() {
+        var reversedArray = new int[count];
+
+        for (int i = 0; i < count; i++)
+            reversedArray[i] = items[count - i - 1];
+
+        items = reversedArray;
+    }
 }
