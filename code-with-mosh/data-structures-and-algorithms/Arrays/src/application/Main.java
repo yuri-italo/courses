@@ -11,7 +11,9 @@ public class Main {
         numbers.insert(30);
         numbers.insert(40);
         numbers.insert(50);
-        numbers.reverse();
+        numbers.insert(60);
+        numbers.insertAt(100,2);
+        numbers.insertAt(100,5);
         numbers.print();
     }
 }

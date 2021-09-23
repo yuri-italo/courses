@@ -82,4 +82,28 @@ public class Array {
 
         items = reversedArray;
     }
+
+    public void insertAt(int number, int arrayIndex) {
+        if (arrayIndex < 0 || arrayIndex > count)
+            throw new IllegalArgumentException();
+
+        resizeIfRequired();
+
+        for (int i = count - 1; i >= arrayIndex; i--)
+            items[i + 1] = items[i];
+
+        items[arrayIndex] = number;
+        count++;
+    }
+
+    private void resizeIfRequired() {
+        if (items.length == count) {
+            int[] aux = new int[count * 2];
+
+            for (int i = 0; i < count; i++)
+                aux[i] = items[i];
+
+            items = aux;
+        }
+    }
 }
