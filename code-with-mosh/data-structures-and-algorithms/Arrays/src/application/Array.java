@@ -30,4 +30,16 @@ public class Array {
         // Add the new item at the end
         items[count++] = item;
     }
+
+    public void removeAt(int arrayIndex) {
+        // Validate the index
+        if (arrayIndex < 0 || arrayIndex >= count)
+            throw new IllegalArgumentException();
+
+        // Shift the items to the left to fill the hole
+        for (int i = arrayIndex; i < count; i++)
+            items[i] = items[i +1];
+
+        count--;
+    }
 }
