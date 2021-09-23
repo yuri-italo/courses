@@ -63,4 +63,14 @@ public class Array {
 
         return max;
     }
+
+    public Array intersect(Array array) {
+        var intersection = new Array(count);
+
+        for (int item: items)
+            if (array.indexOf(item) >= 0)
+                intersection.insert(item);
+
+        return intersection;
+    }
 }
