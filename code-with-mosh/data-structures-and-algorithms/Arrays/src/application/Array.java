@@ -42,4 +42,12 @@ public class Array {
 
         count--;
     }
+
+    public int indexOf(int number) {
+        for (int i = 0; i < count; i++)
+            if (items[i] == number)
+                return i;
+
+        return -1;
+    }
 }
