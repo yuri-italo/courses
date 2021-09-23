@@ -50,4 +50,17 @@ public class Array {
 
         return -1;
     }
+
+    public int max() {
+        int max=0;
+
+        for (int i = 0; i < count; i++)
+            if (i == 0)
+                max = items[i];
+            else
+                if (items[i] > max)
+                    max = items[i];
+
+        return max;
+    }
 }
