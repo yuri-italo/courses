@@ -14,6 +14,7 @@ public class LinkedList {
 
     private Node first;
     private Node last;
+    private int size;
 
     public void addLast(int item) {
         var node = new Node(item);
@@ -24,6 +25,8 @@ public class LinkedList {
             last.next = node;
             last = node;
         }
+
+        size++;
     }
 
     public void addFirst(int item) {
@@ -35,6 +38,8 @@ public class LinkedList {
             node.next = first;
             first = node;
         }
+
+        size++;
     }
 
     public int indexOf(int item) {
@@ -57,28 +62,34 @@ public class LinkedList {
         if (isEmpty())
             throw new NoSuchElementException();
 
-        if (first == last) {
+        if (first == last)
             first = last = null;
-            return;
+        else {
+            var second = first.next;
+            first.next = null;
+            first = second;
         }
-
-        var second = first.next;
-        first.next = null;
-        first = second;
+        
+        size--;
     }
 
     public void removeLast() {
         if (isEmpty())
             throw new NoSuchElementException();
 
-        if (first == last) {
+        if (first == last)
             first = last = null;
-            return;
+        else {
+            var previous = getPrevious(last);
+            last = previous;
+            last.next = null;
         }
 
-        var previous = getPrevious(last);
-        last = previous;
-        last.next = null;
+        size--;
+    }
+
+    public int size() {
+        return size;
     }
 
     private boolean isEmpty() {
