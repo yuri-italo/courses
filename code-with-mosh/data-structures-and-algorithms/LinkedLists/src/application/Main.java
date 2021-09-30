@@ -6,6 +6,7 @@ public class Main {
         list.addLast(10);
         list.addLast(20);
         list.addLast(30);
+        list.removeFirst();
         System.out.println(list.contains(100));
     }
 }
