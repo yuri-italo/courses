@@ -9,6 +9,6 @@ public class Main {
         list.addLast(40);
         list.addLast(50);
         list.addLast(60);
-        list.printMiddle();
+        System.out.println(list.hasLoop());
     }
 }
