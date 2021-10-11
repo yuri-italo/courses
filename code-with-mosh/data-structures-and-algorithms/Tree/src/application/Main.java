@@ -10,6 +10,8 @@ public class Main {
         tree.insert(6);
         tree.insert(8);
         tree.insert(10);
-        System.out.println(tree.isBinarySearchTree());
+        var list = tree.getNodesAtDistance(1);
+        for (var item : list)
+            System.out.println(item);
     }
 }
