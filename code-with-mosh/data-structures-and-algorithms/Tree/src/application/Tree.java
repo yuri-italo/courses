@@ -226,6 +226,20 @@ public class Tree {
         return countLeaves(root.leftChild) + countLeaves(root.rightChild);
     }
 
+    public int max() {
+        if (root == null)
+            throw new IllegalStateException();
+
+        return max(root);
+    }
+
+    private int max(Node root) {
+        if (root.rightChild == null)
+            return root.value;
+
+        return max(root.rightChild);
+    }
+
     private boolean isLeaf(Node node) {
         return node.leftChild == null && node.rightChild == null;
     }
