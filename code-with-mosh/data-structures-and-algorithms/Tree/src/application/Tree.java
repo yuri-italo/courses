@@ -233,6 +233,13 @@ public class Tree {
         return max(root);
     }
 
+    private int max(Node root) {
+        if (root.rightChild == null)
+            return root.value;
+
+        return max(root.rightChild);
+    }
+
     public boolean contains(int value) {
         return contains(root, value);
     }
@@ -247,11 +254,23 @@ public class Tree {
         return contains(root.leftChild, value) || contains(root.rightChild, value);
     }
 
-    private int max(Node root) {
-        if (root.rightChild == null)
-            return root.value;
+    public boolean areSibling(int first, int second) {
+        return areSibling(root, first, second);
+    }
 
-        return max(root.rightChild);
+    private boolean areSibling(Node root, int first, int second) {
+        if (root == null)
+            return false;
+
+        var areSibling = false;
+        if (root.leftChild != null && root.rightChild != null) {
+            areSibling = (root.leftChild.value == first && root.rightChild.value == second) ||
+                    (root.rightChild.value == first && root.leftChild.value == second);
+        }
+
+        return areSibling ||
+                areSibling(root.leftChild, first, second) ||
+                areSibling(root.rightChild, first, second);
     }
 
     private boolean isLeaf(Node node) {
