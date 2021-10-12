@@ -198,6 +198,20 @@ public class Tree {
         }
     }
 
+    public int size() {
+        return size(root);
+    }
+
+    private int size(Node root) {
+        if (root == null)
+            return 0;
+
+        if (isLeaf(root))
+            return 1;
+
+        return 1 + size(root.leftChild) + size(root.rightChild);
+    }
+
     private boolean isLeaf(Node node) {
         return node.leftChild == null && node.rightChild == null;
     }
