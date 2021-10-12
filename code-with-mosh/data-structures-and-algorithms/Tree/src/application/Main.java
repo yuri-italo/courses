@@ -10,6 +10,6 @@ public class Main {
         tree.insert(6);
         tree.insert(8);
         tree.insert(10);
-        System.out.println(tree.areSibling(9,1));
+        System.out.println(tree.getAncestors(1));
     }
 }
