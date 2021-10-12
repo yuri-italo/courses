@@ -233,6 +233,20 @@ public class Tree {
         return max(root);
     }
 
+    public boolean contains(int value) {
+        return contains(root, value);
+    }
+
+    private boolean contains(Node root, int value) {
+        if (root == null)
+            return false;
+
+        if (root.value == value)
+            return true;
+
+        return contains(root.leftChild, value) || contains(root.rightChild, value);
+    }
+
     private int max(Node root) {
         if (root.rightChild == null)
             return root.value;
