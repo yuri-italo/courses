@@ -317,6 +317,10 @@ public class Tree {
                 isBalanced(root.rightChild);
     }
 
+    public boolean isPerfect() {
+        return size() == (Math.pow(2, height() + 1) - 1);
+    }
+
     private boolean isLeaf(Node node) {
         return node.leftChild == null && node.rightChild == null;
     }
