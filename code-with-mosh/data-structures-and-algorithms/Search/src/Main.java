@@ -1,7 +1,7 @@
 public class Main {
     public static void main(String[] args) {
         Search search = new Search();
-        int[] numbers = {5,7,0,3,8,6};
-        System.out.println(search.linearSearch(numbers,6));
+        int[] numbers = {1,3,5,6,7};
+        System.out.println(search.binarySearchRec(numbers,1));
     }
 }
