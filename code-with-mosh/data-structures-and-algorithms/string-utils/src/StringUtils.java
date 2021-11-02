@@ -37,4 +37,11 @@ public class StringUtils {
         Collections.reverse(Arrays.asList(words));
         return String.join(" ", words);
     }
+
+    public static boolean areRotations(String str1, String str2) {
+        if (str1 == null || str2 == null)
+            return false;
+
+        return (str1.length() == str2.length() && (str1 + str1).contains(str2));
+    }
 }
