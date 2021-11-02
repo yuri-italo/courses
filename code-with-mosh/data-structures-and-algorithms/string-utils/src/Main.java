@@ -1,5 +1,5 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println(StringUtils.areRotations("ABCD","DACB"));
+        System.out.println(StringUtils.removeDuplicates("Trees are beautiful"));
     }
 }
