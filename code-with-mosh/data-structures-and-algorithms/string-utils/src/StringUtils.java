@@ -59,7 +59,7 @@ public class StringUtils {
         return output.toString();
     }
 
-    public static char getMaxOccuringChar(String str) {
+    public static char getMaxOccurringChar(String str) {
         if (str == null || str.isEmpty())
             throw new IllegalArgumentException();
 
@@ -77,5 +77,17 @@ public class StringUtils {
             }
 
         return result;
+    }
+
+    public static String capitalize(String sentence) {
+        if (sentence == null || sentence.trim().isEmpty())
+            return "";
+
+        String[] words = sentence.trim().replaceAll(" +", " ").split(" ");
+        for (int i = 0; i < words.length; i++) {
+            words[i] = words[i].substring(0,1).toUpperCase() + words[i].substring(1).toLowerCase();
+        }
+
+        return String.join(" ", words);
     }
 }
