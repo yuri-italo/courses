@@ -1,3 +1,8 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+
 public class StringUtils {
     public static int countVowels(String str) {
         if (str == null)
@@ -22,5 +27,14 @@ public class StringUtils {
         }
 
         return reversed.toString();
+    }
+
+    public static String reverseWords(String sentence) {
+        if (sentence == null)
+            return "";
+
+        String[] words = sentence.trim().split(" ");
+        Collections.reverse(Arrays.asList(words));
+        return String.join(" ", words);
     }
 }
