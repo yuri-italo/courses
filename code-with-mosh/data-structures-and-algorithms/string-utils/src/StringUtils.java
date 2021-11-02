@@ -90,4 +90,18 @@ public class StringUtils {
 
         return String.join(" ", words);
     }
+
+    public static boolean areAnagrams(String first, String second) {
+        if (first == null || second == null || first.length() != second.length())
+            return false;
+
+
+        var array1 = first.toCharArray();
+        Arrays.sort(array1);
+
+        var array2 = second.toCharArray();
+        Arrays.sort(array2);
+
+        return Arrays.equals(array1, array2);
+    }
 }
