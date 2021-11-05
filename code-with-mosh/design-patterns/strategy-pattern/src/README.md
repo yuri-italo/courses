@@ -1,0 +1,2 @@
+![strategy](https://user-images.githubusercontent.com/81713250/140581097-75cfd2bc-39c4-4253-8ed2-aeeb06092e55.png)
+![strategy01](https://user-images.githubusercontent.com/81713250/140581123-4a45846f-b14f-4000-a3b5-428dafec02e1.png)
