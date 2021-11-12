@@ -2,10 +2,10 @@ import fx.Button;
 
 public class Main {
     public static void main(String[] args) {
-        var service = new CustumerService();
-        var command = new AddCostumerCommand(service);
-        var button = new Button(command);
+        var composite = new CompositeCommand();
 
-        button.click();
+        composite.add(new ResizeCommand());
+        composite.add(new BlackAndWhiteCommand());
+        composite.execute();
     }
 }
