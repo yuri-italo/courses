@@ -1,11 +1,17 @@
-import fx.Button;
+import editor.*;
 
 public class Main {
     public static void main(String[] args) {
-        var composite = new CompositeCommand();
+        var history = new History();
+        var document = new HtmlDocument();
+        document.setContent("Hello World");
 
-        composite.add(new ResizeCommand());
-        composite.add(new BlackAndWhiteCommand());
-        composite.execute();
+        var boldCommand = new BoldCommand(document, history);
+        boldCommand.execute();
+        System.out.println(document.getContent());
+
+        var undoCommand = new UndoCommand(history);
+        undoCommand.execute();
+        System.out.println(document.getContent());
     }
 }
