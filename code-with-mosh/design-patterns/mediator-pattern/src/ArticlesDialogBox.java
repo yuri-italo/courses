@@ -1,7 +1,12 @@
-public class ArticlesDialogBox extends DialogBox {
-    private ListBox articlesListBox = new ListBox(this);
-    private TextBox titleTextBox = new TextBox(this);
-    private Button saveButton = new Button(this);
+public class ArticlesDialogBox  {
+    private ListBox articlesListBox = new ListBox();
+    private TextBox titleTextBox = new TextBox();
+    private Button saveButton = new Button();
+
+    public ArticlesDialogBox() {
+        articlesListBox.addEventHandler(this::articleSelected);
+        titleTextBox.addEventHandler(this::titleChanged);
+    }
 
     private void articleSelected() {
         titleTextBox.setContent(articlesListBox.getSelection());
@@ -20,13 +25,5 @@ public class ArticlesDialogBox extends DialogBox {
         titleTextBox.setContent("Article 2");
         System.out.println("TextBox: " + titleTextBox.getContent());
         System.out.println("Button: " + saveButton.isEnable());
-    }
-
-    @Override
-    public void changed(UIControl control) {
-        if (control == articlesListBox)
-            articleSelected();
-        else if (control == titleTextBox)
-            titleChanged();
     }
 }
