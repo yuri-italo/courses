@@ -1,0 +1,1 @@
+![adpter-pattern](https://user-images.githubusercontent.com/81713250/142871014-83fd050a-7af4-49b6-9e60-edd064960b6c.png)
