@@ -1,0 +1,1 @@
+![flyweight-pattern](https://user-images.githubusercontent.com/81713250/143035104-488b9c43-8d7f-41a4-86cb-bc317777a895.png)
