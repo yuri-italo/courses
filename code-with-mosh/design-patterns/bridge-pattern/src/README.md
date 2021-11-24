@@ -1,0 +1,1 @@
+![bridge-pattern](https://user-images.githubusercontent.com/81713250/143254961-08b5ef74-f351-4993-8d7d-edea158f9e88.png)
